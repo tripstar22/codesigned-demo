@@ -1,0 +1,27 @@
+<section class="wrapComments">
+  <div class="row wrapTop">
+    <div class="left">
+        <div>Comments <span>&#40;0&#41;</span></div>
+    </div>
+    <div class="right">
+      <div>
+        <div class="wrapPrefix">
+          <span>Sort by&#58;</span>
+        </div>
+        <div class="wrapSelect">
+          <select id="commentSort">
+            <option value="mostRecent">Most Recent</option>
+          </select>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="containerComment">
+      <div class="userProfile" *ngFor="let item of items">
+        <img src="{{item.profileImg}}" alt="user" />
+      </div>
+      <input type="text" placeholder="Start a discussion...">
+    </div>
+  </div>
+</section>

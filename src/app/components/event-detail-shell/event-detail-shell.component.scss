@@ -1,0 +1,10 @@
+@import "../../../assets/scss/vars.scss";
+
+main {
+    width: 100%;
+
+    @media (min-width: $screenLG) {
+        width: 68.75%;
+        display: inline-block;
+    }
+}

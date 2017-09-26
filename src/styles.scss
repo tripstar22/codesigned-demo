@@ -1,0 +1,47 @@
+// import fonts
+@font-face {
+    font-family: 'latomedium';
+    src: url('assets/fonts/lato-medium-webfont.woff2') format('woff2'),
+         url('assets/fonts/lato-medium-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'latoregular';
+    src: url('assets/fonts/lato-regular-webfont.woff2') format('woff2'),
+         url('assets/fonts/lato-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+// import vars
+@import "assets/scss/vars.scss";
+// import global scss partials
+@import "assets/scss/helpers.scss";
+
+body {
+    color: $black1;
+    font-family: 'latoregular', 'Helvetica', sans-serif;
+    font-size: 16px;
+    margin: 0;
+}
+
+img {
+    width: 100%;
+}
+
+ul {
+    padding-left: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+a, button, select, input {
+
+    &:focus {
+        outline: none;
+    }
+}

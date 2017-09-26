@@ -1,0 +1,21 @@
+.row  {
+    display: block;
+    width: 100%;
+
+    &::after {
+        content: ".";
+        height: 0;
+        display: block;
+        clear: both;
+        visibility: hidden;
+    }
+}
+
+.left, .right {
+    display: inline-block;
+    width: 50%;
+}
+
+.right {
+    float: right;
+}

@@ -1,0 +1,182 @@
+@import "../../../assets/scss/vars.scss";
+@import "../../../assets/scss/helpers.scss";
+@import "../../../assets/scss/grid.scss";
+
+header {
+    max-height: 70px;
+    background: rgba(255,255,255,0.97);
+    box-shadow: 0 1px 0 0 $gray, 0 1px 4px 0 rgba(0,0,0,0.10);
+    position: relative;
+    overflow: hidden;
+
+    @media (min-width: $screenMD) {
+        max-height: 90px;
+    }
+}
+
+.wrapLogo {
+    width: 26px;
+    display: inline-block;
+    padding: 20px 0 20px 20px;
+
+    @media (min-width: $screenMD) {
+        width: 36px;
+        padding: 27px 0 27px 30px;
+    }
+
+    @media (min-width: $screenLG) {
+        padding: 27px 40px 27px 30px;
+    }
+}
+
+nav {
+    position: relative;
+    top: -15px;
+
+    ul {
+        display: inline-block;
+    }
+
+    li {
+        display: inline;
+        list-style: none;
+        padding-right: 18px;
+
+        &:last-child {
+            padding-right: 0;
+        }
+    }
+
+    .dropdown {
+
+        &::after {
+            content: '';
+            width: 9px;
+            height: 5px;
+            background: url('https://res.cloudinary.com/tripstar/image/upload/v1506093767/codesigned/caret_down_l6gb1n.png') center center no-repeat;
+            display: inline-block;
+            padding-left: 12px;
+        }
+    }
+
+    a {
+        color: $charcoal;
+        -webkit-transition: all 0.2s ease-in-out;
+        -moz-transition: all 0.2s ease-in-out;
+        transition: all 0.2s ease-in-out;
+
+        &:hover {
+            color: $blueAqua;
+        }
+    }
+
+    .active {
+        color: $blueAqua;
+    }
+}
+
+.wrapNavIcons {
+    text-align: right;
+    padding: 15px 20px 20px 0;
+
+    @media (min-width: $screenMD) {
+        padding: 25px 20px 20px 0;
+    }
+
+    @media (min-width: $screenLG) {
+        display: inline-block;
+        border-left: 1px solid $gray;
+        padding: 25px 30px 20px;
+    }
+
+    div {
+        display: inline-block;
+        padding-right: 20px;
+    }
+
+    .wrapMenu {
+        padding-right: 0;
+
+        @media (min-width: $screenLG) {
+            display: none;
+        }
+    }
+
+    a {
+        display: inline-block;
+    }
+
+    .wrapUser {
+        display: none;
+
+        @media (min-width: $screenLG) {
+            width: 50px;
+            display: inline-block;
+            position: relative;
+            top: -7px;
+            padding-right: 0;
+        }
+    }
+}
+
+.wrapBookmarks  {
+    width: 21px;
+    padding-left: 20px;
+
+    @media (min-width: $screenLG) {
+        padding-left: 0;
+    }
+}
+
+.wrapAnnouncements, .wrapMenu {
+    width: 30px;
+}
+
+.wrapAnnouncements {
+    position: relative;
+}
+
+#badgeAnnouncements {
+    width: 25px;
+    height: 25px;
+    display: block;
+    background: url('https://res.cloudinary.com/tripstar/image/upload/v1506093767/codesigned/badge_3_qdqpdx.png') center center no-repeat;
+    background-size: 25px 25px;
+    position: absolute;
+    top: -10px;
+    right: 5px;
+}
+
+.wrapSearch {
+    width: 20px;
+    padding: 33.5px 30px 0 0;
+    position: relative;
+    top: -22px;
+}
+
+.wrapBookmarks, .wrapAnnouncements {
+
+    @media (min-width: $screenLG) {
+        position: relative;
+        top: -17px;
+    } 
+}
+
+// custom grid for header
+.row {
+
+    .left {
+
+        @media (min-width: $screenLG) {
+            width: 74%;
+        }
+    }
+
+    .right {
+        
+        @media (min-width: $screenLG) {
+            width: 26%;
+            max-width: 270px;
+        }
+    }
+}

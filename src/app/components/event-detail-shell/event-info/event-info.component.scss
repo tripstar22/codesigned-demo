@@ -1,0 +1,159 @@
+@import "../../../../assets/scss/vars.scss";
+@import "../../../../assets/scss/helpers.scss";
+@import "../../../../assets/scss/breadcrumbs.scss";
+@import "../../../../assets/scss/fonts.scss";
+
+.eventDate {
+    display: inline-block;
+    background: $white;
+    border: 1px solid $gray2;
+    box-shadow: 0 2px 1px 0 rgba(0,0,0,0.08);
+    border-radius: 5px;
+    padding: 10px 25px;
+    margin-bottom: 15px;
+
+    @media (min-width: $screenMD) {
+        display: inline-block;
+        text-align: center;
+        vertical-align: top;
+        margin: 5px 35px 15px 0;
+    }
+
+    @media (min-width: $screenLG) {
+        padding: 18px 35px;
+    }
+}
+
+.dateMonth, .dateDay {
+    display: inline-block;
+
+    @media (min-width: $screenMD) {
+        display: block;
+    }
+}
+
+.dateMonth {
+    color: $gunmetal;
+    text-transform: uppercase;
+}
+
+.dateDay {
+    color: $black1;
+
+    @media (min-width: $screenMD) {
+        font-size: 2em;
+        line-height: 36px;
+    }
+
+    @media (min-width: $screenLG) {
+        font-size: 2.813em;
+        line-height: 40px;
+    }
+}
+
+.wrapMain {
+    width: 90.34%;
+    margin: 20px 4.83%;
+
+    @media (min-width: $screenMD) {
+        width: 89.58%;
+        margin: 20px 5.21% 40px;
+    }
+
+    @media (min-width: $screenLG) {
+        width: 86.12%;
+        margin: 50px 6.94% 10px;
+    }
+}
+
+#lineDynamic {
+    height: 1px;
+    display: inline-block;
+    background: url('https://res.cloudinary.com/tripstar/image/upload/v1506364773/codesigned/line_gray.png') center center no-repeat;
+    background-size: 100%;
+    position: relative;
+    top: -4px;
+    margin-right: 20px;
+}
+
+.crumbsPrimary {
+
+    @media (min-width: $screenMD) {
+        padding-bottom: 10px;
+    }
+
+    ul {
+        padding-right: 3px;
+        margin-bottom: 10px;
+    }
+}
+
+.crumbsSecondary {
+
+    ul {
+        margin: 0;
+    }
+}
+
+.wrapDesc {
+    width: 100%;
+
+    @media (min-width: $screenLG) {
+        max-width: 590px;
+    }
+}
+
+.descItem {
+    width: 50%;
+    float: left;
+    padding-bottom: 15px;
+
+    @media (min-width: $screenLG) {
+        width: 33.333%;
+    }
+
+    div {
+        color: $black2;
+        font-size: 1.125em;
+
+        @media (min-width: $screenMD) {
+            font-size: 1em;
+        }
+    }
+
+    .descTitle {
+        color: $gray3;
+        font-size: 1em;
+        line-height: 21px;
+
+        @media (min-width: $screenMD) {
+            font-size: 0.875em;
+            line-height: 14px;
+        }
+    }
+}
+
+.eventInfo {
+    width: 100%;
+}
+
+.eventDesc {
+
+    @media (min-width: $screenMD) {
+        display: inline-block;
+        max-width: 365px;
+    }
+
+    @media (min-width: $screenLG) {
+       width: 460px;
+       max-width: 100%;
+    }
+}
+
+h1 {
+    margin: 0 0 5px;
+
+    @media (min-width: $screenMD) {
+        margin: 0 0 15px;
+    }
+}

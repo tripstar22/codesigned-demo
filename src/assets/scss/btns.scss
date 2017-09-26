@@ -1,0 +1,22 @@
+@import "vars.scss";
+
+.btn {
+    font-family: 'latoregular', 'Helvetica', sans-serif;
+    font-size: 0.875em;
+    padding: 15px 20px;
+    border-radius: 3px;
+}
+
+.btnPrimary {
+    background: $white;
+    color: $blueAqua;
+    border: 1px solid $blueAqua;
+    box-shadow: 0 2px 1px 0 $gray;
+}
+
+.btnSecondary {
+    background: $greenSeafoam;
+    color: $white;
+    border: 1px solid rgba(0,0,0,0.15);
+    box-shadow: 0 3px 1px 0 rgba(25,196,172,0.20);
+}

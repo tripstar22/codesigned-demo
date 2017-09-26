@@ -1,0 +1,16 @@
+@import "vars.scss";
+
+.hideDesktop {
+
+    @media (min-width: $screenLG) {
+        display: none;
+    }
+}
+
+.showDesktop {
+    display: none;
+
+    @media (min-width: $screenLG) {
+        display: inline-block;
+    }
+}

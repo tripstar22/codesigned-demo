@@ -1,0 +1,40 @@
+<header>
+  <div class="row">
+    <div class="left">
+    <div class="wrapLogo">
+        <a href="#"><img src="https://res.cloudinary.com/tripstar/image/upload/v1506093768/codesigned/logo_yuetbb.png" alt="logo" /></a>
+      </div>
+      <nav class="showDesktop">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">News</a></li>
+          <li><a href="#" class="active">Events</a></li>
+          <li class="dropdown"><a href="#">Departments</a></li>
+          <li class="dropdown"><a href="#">Communities</a></li>
+          <li><a href="#">Documents</a></li>
+          <li><a href="#">Employees</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="right">
+      <div class="wrapSearch showDesktop">
+        <a href="#"><img src="https://res.cloudinary.com/tripstar/image/upload/v1506093768/codesigned/icon_search_oxxngr.png" alt="search" /></a>
+      </div>
+      <div class="wrapNavIcons" *ngFor="let item of items">
+        <div class="wrapBookmarks">
+          <a href="#"><img src="https://res.cloudinary.com/tripstar/image/upload/v1506093767/codesigned/icon_bookmark_e8ljpg.png" alt="bookmarks" /></a>
+        </div>
+        <div class="wrapAnnouncements">
+          <a href="#"><img src="https://res.cloudinary.com/tripstar/image/upload/v1506093767/codesigned/icon_notifications_pu3uoc.png" alt="announcements" /></a>
+          <span id="badgeAnnouncements"></span>
+        </div>
+        <div class="wrapMenu hideDesktop">
+          <a href="#"><img src="https://res.cloudinary.com/tripstar/image/upload/v1506093767/codesigned/icon_nav_main_b7sxax.png" alt="menu" /></a>
+        </div>
+        <div class="wrapUser">
+          <a href="#" class="showDesktop"><img src="{{item.profileImg}}" alt="user" /></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>

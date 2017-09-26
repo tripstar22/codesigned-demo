@@ -1,0 +1,42 @@
+<aside id="asideEventDetail" (window:resize)="asideDynamicHeight($event)">
+  <div class="wrap">
+    <div class="title">Event Contact</div>
+    <div class="row wrapEventContact">
+      <div class="left">
+        <div class="wrapImg">
+          <img src="{{ (items | async)?.eventContactImg }}" alt="event contact" />
+        </div>
+      </div>
+      <div class="right">
+        <h2>{{ (items | async)?.eventContact }}</h2>
+        <h3>{{ (items | async)?.eventContactPosition }}</h3>
+      </div>
+    </div>
+    <cd-event-actions></cd-event-actions>
+    <div class="wrapAttending">
+      <div>{{ (items | async)?.attending }} Attending</div>
+    </div>
+    <div class="row wrapUtilities">
+      <div class="left">
+        <a href="#">
+          <div class="wrapCommentsTotal">
+            <img src="https://res.cloudinary.com/tripstar/image/upload/v1506093767/codesigned/icon_comment_bymwhh.png" alt="comments" />
+          </div>
+          <span class="commentsTotal">0</span>
+        </a>
+      </div>
+      <div class="right">
+        <div class="wrapShare">
+          <a href="#">
+            <img src="https://res.cloudinary.com/tripstar/image/upload/v1506093768/codesigned/icon_share_fiacph.png" alt="share" />
+          </a>
+        </div>
+        <div class="wrapEdit">
+          <a href="#">
+            <img src="https://res.cloudinary.com/tripstar/image/upload/v1506093768/codesigned/icon_edit_l6kasv.png" alt="edit" />
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</aside>

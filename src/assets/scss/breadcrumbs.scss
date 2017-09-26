@@ -1,0 +1,95 @@
+@import "vars.scss";
+
+.breadcrumbs {
+
+    ul {
+        list-style: none;
+    }
+
+    li {
+        display: inline;
+    }
+}
+
+.crumbsPrimary {
+
+    ul {
+        display: inline-block;
+        margin-top: 0;
+    }
+
+    li {
+        font-size: 0.75em;
+
+        &::after {
+            content: '';
+            width: 4.85px;
+            height: 8px;
+            background: url('https://res.cloudinary.com/tripstar/image/upload/v1506093767/codesigned/caret_right_hccuqc.png') center center no-repeat;
+            display: inline-block;
+            padding-left: 12px;
+        }
+    }
+
+    a {
+        color: $gunmetal;
+    }
+
+    .active {
+
+        &::after {
+            width: 0;
+            height: 0;
+            background: none;
+            padding-left: 0;
+        }
+
+        a {
+            color: $black1;
+        }
+    }
+}
+
+.crumbsSecondary {
+
+    li {
+        font-size: 0.875em;
+
+        &::after {
+            content: '';
+            width: 13px;
+            height: 9px;
+            display: inline-block;
+            background: url('https://res.cloudinary.com/tripstar/image/upload/v1506093767/codesigned/arrow_right_burnt_orange_sxzdyo.png') center center no-repeat;
+            padding: 0 11px 0 7px;
+        }
+
+        &:first-child {
+
+            &::before {
+                content: '';
+                width: 15px;
+                height: 15px;
+                display: inline-block;
+                background: url('https://res.cloudinary.com/tripstar/image/upload/v1506093767/codesigned/doughnut_burnt_orange_lpgni0.png') center center no-repeat;
+                position: relative;
+                top: 2px;
+                padding-right: 5px;
+            }
+        }
+
+        &:last-child {
+
+            &::after {
+                width: 0;
+                height: 0;
+                background: none;
+                padding-left: 0;
+            }
+        }
+    }
+
+    a {
+        color: $orangeBurnt;
+    }
+}

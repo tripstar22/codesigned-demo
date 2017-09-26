@@ -1,0 +1,50 @@
+<section class="wrapMain">
+  <div id="crumbsNavWrap" class="breadcrumbs crumbsPrimary">
+      <ul id="crumbsNav">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Events</a></li>
+        <li class="active"><a href="#">Weekly Marketing Meeting</a></li>
+      </ul>
+      <div id="lineDynamic" (window:resize)="dynamicLineStyles($event)"></div>
+    </div>
+    <section class="eventInfo">
+      <div class="eventDate">
+        <div class="dateMonth">{{ (items | async)?.month }}</div>
+        <div class="dateDay">{{ (items | async)?.day }}</div>
+      </div>
+      <div class="eventDesc">
+        <div class="breadcrumbs crumbsSecondary">
+          <ul>
+            <li><a href="#">Department</a></li>
+            <li><a href="#">Marketing</a></li>
+          </ul>
+        </div>
+        <h1>{{ (items | async)?.title }}</h1>
+        <div class="wrapDesc">
+          <div class="descItem showDesktop">
+            <div class="descTitle">Date</div>
+            <div>{{ (items | async)?.month }}. {{ (items | async)?.day }}, {{ (items | async)?.year }}</div>
+          </div>
+          <div class="descItem">
+            <div class="descTitle">Time</div>
+            <div>{{ (items | async)?.time }}</div>
+          </div>
+          <div class="descItem">
+            <div class="descTitle">Location</div>
+            <div>{{ (items | async)?.location }}</div>
+          </div>
+          <div class="descItem hideDesktop">
+            <div class="descTitle">Event Contact</div>
+            <div>{{ (items | async)?.eventContact }}</div>
+          </div>
+          <div class="descItem hideDesktop">
+            <div class="descTitle">Attending</div>
+            <div>{{ (items | async)?.attending }}</div>
+          </div>
+        </div>
+      </div>
+      <div class="hideDesktop">
+        <cd-event-actions></cd-event-actions>
+      </div>
+    </section>
+</section>

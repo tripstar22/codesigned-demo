@@ -1,0 +1,100 @@
+@import "../../../../assets/scss/vars.scss";
+@import "../../../../assets/scss/grid.scss";
+@import "../../../../assets/scss/fonts.scss";
+
+aside {
+    display: none;
+
+    @media (min-width: $screenLG) {
+        width: 31.25%;
+        display: inline-block;
+        background: $smoke;
+        box-shadow: inset 1px 0 0 0 $gray;
+        float: right;
+    }
+}
+
+.wrap {
+    padding: 45px 40px 0;
+}
+
+.title {
+    font-size: 1.125em;
+    padding-bottom: 14px;
+}
+
+.wrapImg {
+    width: 100px;
+}
+
+.wrapEventContact {
+    padding-bottom: 10px;
+
+    .left {
+
+        @media (min-width: 1200px) {
+            width: 40%;
+        }
+
+        @media (min-width: $screenXL) {
+            width: 30%;
+        }
+    }
+
+    .right {
+
+        @media (min-width: 1200px) {
+            width: 60%;
+        }
+
+        @media (min-width: $screenXL) {
+            width: 70%;
+        }
+    }
+}
+
+h2 {
+    margin-bottom: 3px;
+}
+
+h3 {
+    margin-top: 0;
+}
+
+.wrapAttending {
+    border-bottom: 1px solid $gray;
+    padding-bottom: 15px;
+    margin-bottom: 20px;
+
+    div {
+        color: $gunmetal;
+        font-family: 'latomedium', 'Helvetica', sans-serif;
+    }
+}
+
+.wrapCommentsTotal {
+    width: 24px;
+    display: inline-block;
+    padding-right: 10px;
+}
+
+.commentsTotal {
+    position: relative;
+    top: -5px;
+}
+
+.wrapShare, .wrapEdit {
+    width: 25px;
+    display: inline-block;
+}
+
+.wrapShare {
+    padding-right: 30px;
+}
+
+.wrapUtilities {
+
+    .right {
+        text-align: right;
+    }
+}

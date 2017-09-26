@@ -1,0 +1,148 @@
+@import "../../../assets/scss/vars.scss";
+@import "../../../assets/scss/grid.scss";
+
+.wrapComments {
+    width: 90.34%;
+    margin: 20px 4.83%;
+
+    @media (min-width: $screenMD) {
+        width: 89.58%;
+        margin: 20px 5.21% 50px;
+    }
+
+    @media (min-width: $screenLG) {
+        width: 86.12%;
+        margin: 20px 6.94% 200px;
+    }
+}
+
+.wrapTop {
+
+    .left, .right {
+        width: 100%;
+        font-size: 1.125em;
+
+        @media (min-width: $screenMD) {
+            width: 50%;
+        }
+    }
+
+    .left {
+
+        span {
+            color: $gunmetal;
+        }
+
+        div {
+
+            @media (min-width: $screenMD) {
+                padding-top: 21px;
+            }
+        }
+    }
+
+    .right {
+
+        span {
+            display: none;
+
+            @media (min-width: $screenMD) {
+                display: inline-block;
+            }
+        }
+    }
+}
+
+select {
+    width: 100%;
+    background: $white url('https://res.cloudinary.com/tripstar/image/upload/v1506093767/codesigned/caret_down_l6gb1n.png') 93% center no-repeat;
+    border: 1px solid $gray;
+    box-shadow: 0 1px 3px 0 rgba(0,0,0,0.10);
+    border-radius: 3px;
+    padding: 20px;
+    margin: 15px 0 20px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+
+    @media (min-width: $screenMD) {
+        margin-top: 0;
+    }
+}
+
+select, option {
+    font-family: 'latomedium', 'Helvetica', sans-serif;
+}
+
+.containerComment {
+    background: $white;
+    border: 1px solid $gray;
+    box-shadow: 0 1px 3px 0 #E8EAEC;
+    border-radius: 5px;
+    padding: 15px 30px;
+
+    .userProfile {
+        width: 17.86%;
+        padding-right: 15px;
+
+        @media (min-width: $screenMD) {
+            width: 10%;
+        }
+    }
+
+    .userProfile, input {
+        display: inline-block;
+    }
+
+    input {
+        width: 73%;
+        color: $black1;
+        font-size: 1.125em;
+        border: none;
+        position: relative;
+        top: -15px;
+
+        &::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+            color: #B4B8BE;
+        }
+        & ::-moz-placeholder { /* Firefox 19+ */
+            color: #B4B8BE;
+        }
+        &:-moz-placeholder { /* Firefox 18- */
+            color: #B4B8BE;
+        }
+
+        @media (min-width: $screenMD) {
+            width: 80%;
+        }
+
+        @media (min-width: 1200px) {
+            top: -25px;
+        }
+    }
+}
+
+.wrapPrefix, .wrapSelect {
+
+    @media (min-width: $screenMD) {
+        display: inline-block;
+    }
+}
+
+.wrapPrefix {
+
+    @media (min-width: $screenMD) {
+        width: 20%;
+        font-size: 1em;
+        
+        span {
+            color: $gunmetal;
+        }
+    }
+}
+
+.wrapSelect {
+
+    @media (min-width: $screenMD) {
+        width: 78%;
+    }
+}

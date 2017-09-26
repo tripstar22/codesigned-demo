@@ -1,0 +1,31 @@
+@import "../../../../assets/scss/vars.scss";
+@import "../../../../assets/scss/fonts.scss";
+
+.wrapDetails {
+    width: 90.34%;
+    border-bottom: 1px solid $gray;
+    margin: 20px 4.83%;
+
+    @media (min-width: $screenMD) {
+        width: 89.58%;
+        margin: 20px 5.21%;
+    }
+
+    @media (min-width: $screenLG) {
+        width: 86.12%;
+        margin: 20px 6.94% 50px;
+    }
+
+    p a {
+        color: $cyan;
+        text-decoration: underline;
+    }
+
+    .accessCode {
+        padding: 25px 0 35px;
+
+        @media (min-width: $screenMD) {
+            padding: 25px 0 45px;
+        }
+    }
+}
